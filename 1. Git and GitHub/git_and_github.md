@@ -77,3 +77,11 @@ git commit -m "Add a README for the docs assistant"
 ![](images/Screenshot%202026-11-22%20210945.png)
 ![](images/Screenshot%202026-11-22%20211039.png)
 ![](images/c911ffd42598405c84ebc14a0945a18d.svg)
+
+### **The three sentences status ends with**
+![](images/Screenshot%202026-11-22%20211941.png)
+
+### **.gitignore**
+![](images/Screenshot%202026-11-22%20212203.png)
+![](images/Screenshot%202026-11-22%20212429.png)
+
