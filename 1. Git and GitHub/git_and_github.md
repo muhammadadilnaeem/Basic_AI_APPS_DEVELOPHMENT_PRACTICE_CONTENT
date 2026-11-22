@@ -72,3 +72,8 @@ git commit -m "Add a README for the docs assistant"
 
 ### **Working tree compared with staging area and repository**
 ![](images/Screenshot%202026-11-21%20224003.png)
+
+### **Reading git status**
+![](images/Screenshot%202026-11-22%20210945.png)
+![](images/Screenshot%202026-11-22%20211039.png)
+![](images/c911ffd42598405c84ebc14a0945a18d.svg)
