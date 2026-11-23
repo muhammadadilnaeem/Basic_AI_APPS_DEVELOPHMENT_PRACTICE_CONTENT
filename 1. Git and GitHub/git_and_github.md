@@ -85,3 +85,43 @@ git commit -m "Add a README for the docs assistant"
 ![](images/Screenshot%202026-11-22%20212203.png)
 ![](images/Screenshot%202026-11-22%20212429.png)
 
+
+### **Looking at history with git log**
+![](images/Screenshot%202026-11-23%20211739.png)
+![](images/Screenshot%202026-11-23%20212054.png)
+
+```bash
+git log                 # every commit, newest first
+git log --oneline -n 5  # the last five, one line each
+```
+
+
+### **One line per commit**
+![](images/Screenshot%202026-11-23%20212422.png)
+```bash
+git log --oneline
+```
+
+### **Seeing what changed with git diff**
+![](images/Screenshot%202026-11-23%20212834.png)
+![](images/Screenshot%202026-11-23%20213004.png)
+![](images/73be1e027db0487890909d02cd539a89.svg)
+
+```bash
+git diff            # the folder against the staging area
+git diff --staged   # the staging area against the last commit
+git diff HEAD       # the folder against the last commit
+```
+
+- The same change again. git diff HEAD compares the folder with the last commit and ignores the staging area in between, so staging makes no difference to it.
+
+![](images/Screenshot%202026-11-23%20213604.png)
+
+
+### **Writing a commit message**
+![](images/Screenshot%202026-11-23%20215334.png)
+![](images/Screenshot%202026-11-23%20215429.png)
+
+### **Writing a commit message**
+![](images/Screenshot%202026-11-23%20215733.png)
+
