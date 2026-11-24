@@ -125,3 +125,12 @@ git diff HEAD       # the folder against the last commit
 ### **Writing a commit message**
 ![](images/Screenshot%202026-11-23%20215733.png)
 
+### **Branches**
+![](images/Screenshot%202026-11-24%20080359.png)
+
+- Syntax: the same command lists branches, creates one, and deletes one.
+```bash
+git branch                 # list them, with a star on the one you are on
+git branch <name>          # create a branch pointing at the current commit
+git branch -d <name>       # delete a branch that has been merged
+```
