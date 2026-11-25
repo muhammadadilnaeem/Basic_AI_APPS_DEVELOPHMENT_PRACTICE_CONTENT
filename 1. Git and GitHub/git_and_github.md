@@ -134,3 +134,57 @@ git branch                 # list them, with a star on the one you are on
 git branch <name>          # create a branch pointing at the current commit
 git branch -d <name>       # delete a branch that has been merged
 ```
+![](images/Screenshot%202026-11-25%20203041.png)
+![](images/Screenshot%202026-11-25%20203625.png)
+![](images/Screenshot%202026-11-25%20203446.png)
+![](images/fb5a0488a1b143d98d481ca61311b2ce.svg)
+![](images/Screenshot%202026-11-25%20204306.png)
+
+### **Switching branches**
+![](images/Screenshot%202026-11-25%20205420.png)
+![](images/Screenshot%202026-11-25%20205549.png)
+
+- Syntax: git switch arrived in Git 2.23 for exactly this job. git checkout still does it and is what you will see in older material.
+
+```bash
+git switch <name>       # move to an existing branch
+git switch -c <name>    # create it and move to it in one step
+git switch -            # back to the branch you were on before
+git checkout <name>     # the older command, same move
+git switch --detach     # move to previous commit
+```
+
+### **Merging a branch**
+
+![](images/Screenshot%202026-11-25%20210903.png)
+- An experiment that worked has to come back. Merging is how: you stand on the branch that should receive the work, name the branch that has it, and Git joins the two lines of history. There are two ways it can end, and the output tells you which one happened.
+
+```bash
+git switch main            # the branch that receives the work
+git merge chunk-800        # the branch whose commits come in
+git merge --no-edit <name> # keep Git's prepared message, open no editor
+```
+### **A merge that makes a commit**
+![](images/Screenshot%202026-11-25%20211317.png)
+- Both names are on different commits, and neither is reachable from the other. There is no name to move forward, so Git has to join the two lines instead.
+
+```bash
+git merge --no-edit chunk-800
+```
+### **Tidying up after a merge**
+![](images/Screenshot%202026-11-25%20211707.png)
+```bash
+git branch -d chunk-800
+```
+### **Where you merge**
+![](images/Screenshot%202026-11-25%20212005.png)
+
+
+### **Resolving merge conflicts**
+![](images/Screenshot%202026-11-25%20212954.png)
+- Most merges finish on their own. Git only stops when the two sides changed the same lines, and then it hands the file back to you with both versions in it, marked. Nothing is lost and nothing is broken. The job is to edit the file into the version you want and commit it.
+
+
+### **What Git does when it cannot decide**
+- The merge runs, finishes what it can, and stops on the file it cannot finish.
+![](images/Screenshot%202026-11-25%20213615.png)
