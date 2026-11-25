@@ -188,3 +188,25 @@ git branch -d chunk-800
 ### **What Git does when it cannot decide**
 - The merge runs, finishes what it can, and stops on the file it cannot finish.
 ![](images/Screenshot%202026-11-25%20213615.png)
+
+![](images/Screenshot%202026-11-25%20220532.png)
+
+
+### **Git remotes**
+![](images/Screenshot%202026-11-25%20222048.png)
+![](images/20badc6f5f494c219123693758d589f1.svg)
+
+**`Syntax`**: every form of git remote you will use.
+
+```bash
+git remote add origin <URL>         # give a URL the name origin
+git remote -v                       # list the remotes, with their URLs
+git remote rename origin github     # change a remote's name
+git remote set-url origin <URL>     # point an existing name at a different URL
+git remote remove github            # forget a remote
+```
+![](images/Screenshot%202026-11-25%20222639.png)
+![](images/Screenshot%202026-11-25%20223230.png)
+
+
+
