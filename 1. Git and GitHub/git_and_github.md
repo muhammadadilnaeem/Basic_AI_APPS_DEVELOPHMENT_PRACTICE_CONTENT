@@ -208,5 +208,41 @@ git remote remove github            # forget a remote
 ![](images/Screenshot%202026-11-25%20222639.png)
 ![](images/Screenshot%202026-11-25%20223230.png)
 
+### **GitHub authentication**
+![](images/Screenshot%202026-11-26%20194237.png)
+![](images/Screenshot%202026-11-26%20194435.png)
 
 
+### **Pushing and pulling**
+![](images/Screenshot%202026-11-26%20201237.png)
+![](images/1a870e8444dc4d7aa77d53f600c971df.svg)
+
+```bash
+git push -u origin main    # send branch main to origin, and remember the pairing
+git push                   # after -u once, this is enough
+git fetch origin           # download what the remote has, change nothing you are working on
+git pull                   # git fetch, then merge what came down into your branch
+```
+![](images/Screenshot%202026-11-26%20201746.png)
+
+
+### **Cloning a repository**
+![](images/Screenshot%202026-11-26%20202301.png)
+
+- `Syntax`: the forms of git clone worth knowing.
+```bash
+git clone <URL>                  # into a new folder named after the repository
+git clone <URL> my-folder        # into a folder you name
+git clone --branch dev <URL>     # start on the dev branch instead of the default one
+git clone --depth 1 <URL>        # the latest commit only, not the whole history
+```
+
+### **Cloning against init plus remote**
+![](images/Screenshot%202026-11-26%20202922.png)
+
+
+### **Pull requests**
+![](images/Screenshot%202026-11-26%20203124.png)
+![](images/85f188b8f28749668edccb6dd192dfb7.svg)
+
+- The name is a request to the project to pull your branch in. GitHub's docs put one rule on it: “Pull requests can only be opened between two different branches”. The branch you want merged is the compare branch; the branch it should land in is the base.
